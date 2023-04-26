@@ -37,3 +37,7 @@ def home():
      </h1><p>Esta es una API que contiene {num_libros} libros.</p>"""
 
      return home_display
+
+# Ejecutar la aplicación
+if __name__ == '__main__':
+    app.run()
