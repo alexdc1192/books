@@ -24,7 +24,7 @@ def close_connection(exception):
 @app.route('/', methods=['GET'])
 def home():
      conn = get_db()
-     cursor = conn.cursos()
+     cursor = conn.cursor()
      cursor.execute("SELECT * FROM books_table")
      totalRows = cursor.fetchall()
      
